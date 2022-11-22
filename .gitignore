@@ -12,9 +12,6 @@
 /.next/
 /out/
 
-# tina
-/.tina/
-
 # production
 /build
 
