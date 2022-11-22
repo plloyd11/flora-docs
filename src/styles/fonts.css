@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/fonts/lexend.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/Inter-roman.var.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('/fonts/Inter-italic.var.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MongoDB Value Serif';
+  src: url('/fonts/mongo-db-value/MongoDBValueSerif-Regular.woff2')
+      format('woff2'),
+    url('/fonts/mongo-db-value/MongoDBValueSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/euclid-circular-a/euclidcirculara-regular-webfont.woff2')
+      format('woff2'),
+    url('/fonts/euclid-circular-a/euclidcirculara-regular-webfont.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('/fonts/euclid-circular-a/euclidcirculara-semibold-webfont.woff2')
+      format('woff2'),
+    url('/fonts/euclid-circular-a/euclidcirculara-semibold-webfont.woff')
+      format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
