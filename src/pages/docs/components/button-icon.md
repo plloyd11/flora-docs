@@ -1,5 +1,5 @@
 ---
-title: Design principles
+title: Button Icon
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

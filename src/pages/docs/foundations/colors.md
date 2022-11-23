@@ -1,5 +1,5 @@
 ---
-title: Predictive data generation
+title: Colors
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

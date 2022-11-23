@@ -1,5 +1,5 @@
 ---
-title: How to contribute
+title: Grids
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

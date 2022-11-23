@@ -1,5 +1,5 @@
 ---
-title: Architecture guide
+title: Accessibility
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

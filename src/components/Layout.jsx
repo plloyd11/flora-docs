@@ -16,54 +16,45 @@ const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
     ],
   },
   {
     title: 'Foundations',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
-      {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
-      },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
-      {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
-      },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'Colors', href: '/docs/foundations/colors' },
+      { title: 'Typography', href: '/docs/foundations/typography'},
+      { title: 'Grids', href: '/docs/foundations/grids' },
+      { title: 'Shadows', href: '/docs/foundations/shadows' },
+      { title: 'Border Radius', href: '/docs/foundations/border-radius' },
+      { title: 'Spacing', href: '/docs/foundations/spacing' },
+      { title: 'Accessibility', href: '/docs/foundations/accessibility' },
     ],
   },
   {
     title: 'Components',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
+      { title: 'Button', href: '/docs/components/button' },
+      { title: 'Button Icon', href: '/docs/components/button-icon' },
     ],
   },
   {
-    title: 'Tokens',
+    title: 'Patterns',
     links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
+      { title: 'Forms', href: '/docs/patterns/forms' },
+      { title: 'Tables', href: '/docs/patterns/tables' },
     ],
   },
   {
     title: 'Icons',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'System Icons', href: '/docs/icons/system-icons' },
+    ],
+  },
+  {
+    title: 'Tokens',
+    links: [
+      { title: 'Overview', href: '/docs/tokens/overview' },
+      { title: 'Token List', href: '/docs/tokens/token-list' },
     ],
   },
   {
@@ -228,7 +219,7 @@ export function Layout({ children, title, tableOfContents }) {
             )}
             <Prose>{children}</Prose>
           </article>
-          <dl className="flex pt-6 mt-12 border-t border-slate-200 dark:border-slate-800">
+          <dl className="flex pt-6 mt-12 border-t border-black-20 dark:border-black-70">
             {previousPage && (
               <div>
                 <dt className="text-sm font-medium font-display text-blue-80 dark:text-black-00">

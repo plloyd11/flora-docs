@@ -1,5 +1,5 @@
 pre[class*='language-'] {
-  color: theme('colors.black.50');
+  color: theme('colors.black.20');
 }
 
 .token.tag,
@@ -8,7 +8,7 @@ pre[class*='language-'] {
 .token.selector .class,
 .token.selector.class,
 .token.function {
-  color: theme('colors.red.40');
+  color: #ffa1a1;
 }
 
 .token.attr-name,
@@ -20,14 +20,14 @@ pre[class*='language-'] {
 }
 
 .token.module {
-  color: theme('colors.red.40');
+  color: #ffa1a1;
 }
 
 .token.attr-value,
 .token.class,
 .token.string,
 .token.property {
-  color: theme('colors.blue.30');
+  color: #feeba4;
 }
 
 .token.punctuation,
@@ -44,4 +44,8 @@ pre[class*='language-'] {
 .token.operator,
 .token.combinator {
   color: theme('colors.black.40');
+}
+
+.prism-code {
+  background: theme('colors.black.80');
 }

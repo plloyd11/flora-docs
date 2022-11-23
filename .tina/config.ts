@@ -5,8 +5,8 @@ import { defineConfig } from 'tinacms'
 
   export default defineConfig({
     branch,
-    clientId: '5d559244-b281-4cbe-9ad4-9231990d0d34', // Get this from tina.io
-    token: 'f0b97c9933b027113ce742053e3235657cb92c76', // Get this from tina.io
+    clientId: '5d559244-b281-4cbe-9ad4-9231990d0d34',
+    token: 'f0b97c9933b027113ce742053e3235657cb92c76',
     build: {
       outputFolder: 'admin',
       publicFolder: 'public',
@@ -22,7 +22,7 @@ import { defineConfig } from 'tinacms'
         {
           name: 'post',
           label: 'Blog Posts',
-          path: 'src/pages/blog',
+          path: 'blog',
           fields: [
             {
               type: 'string',
