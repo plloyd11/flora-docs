@@ -1,5 +1,5 @@
 ---
-title: Grids
+title: CacheAdvance.predict()
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 

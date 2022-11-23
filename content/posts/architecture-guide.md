@@ -1,5 +1,5 @@
 ---
-title: Border Radius
+title: Architecture guide
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
