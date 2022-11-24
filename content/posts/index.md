@@ -10,28 +10,28 @@ Welcome to the Flora documentation site! It's a work in progress, so please bear
 <QuickLinks
   quickLinks={[
     {
-      title: "Installation",
-      icon: "installation",
+      title: "Foundations",
+      icon: "theming",
       href: "/",
       description:
-        "Step-by-step guides to setting up your system and installing the library."
+        "Fundamental design guidance for creating quality flora experiences"
     },
     {
-      title: "Architecture Guide",
+      title: "Components",
       icon: "presets",
       href: "/",
       description: "Learn how the internals work and contribute."
     },
     {
-      title: "Plugins",
+      title: "Tokens",
       icon: "plugins",
       href: "/",
       description:
-        "Extend the library with third-party plugins or write your own."
+        "Coded names that represent design decisions for color, spacing, typography, and more"
     },
     {
-      title: "API reference",
-      icon: "theming",
+      title: "Icons",
+      icon: "lightbulb",
       href: "/",
       description:
         "Learn to easily customize and modify your app's visual design to fit your brand."
