@@ -14,15 +14,13 @@ import { ThemeSelector } from '../components/ThemeSelector'
 const navigation = [
   {
     title: 'Introduction',
-    links: [
-      { title: 'Getting started', href: '/' },
-    ],
+    links: [{ title: 'Getting started', href: '/' }],
   },
   {
     title: 'Foundations',
     links: [
       { title: 'Colors', href: '/docs/foundations/colors' },
-      { title: 'Typography', href: '/docs/foundations/typography'},
+      { title: 'Typography', href: '/docs/foundations/typography' },
       { title: 'Grids', href: '/docs/foundations/grids' },
       { title: 'Shadows', href: '/docs/foundations/shadows' },
       { title: 'Border Radius', href: '/docs/foundations/border-radius' },
@@ -46,9 +44,7 @@ const navigation = [
   },
   {
     title: 'Icons',
-    links: [
-      { title: 'System Icons', href: '/docs/icons/system-icons' },
-    ],
+    links: [{ title: 'System Icons', href: '/docs/icons/system-icons' }],
   },
   {
     title: 'Tokens',
@@ -59,9 +55,7 @@ const navigation = [
   },
   {
     title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-    ],
+    links: [{ title: 'How to contribute', href: '/docs/how-to-contribute' }],
   },
 ]
 
@@ -96,22 +90,22 @@ function Header({ navigation }) {
           : 'dark:bg-transparent'
       )}
     >
-      <div className="flex mr-6 lg:hidden">
+      <div className="mr-6 flex lg:hidden">
         <MobileNavigation navigation={navigation} />
       </div>
-      <div className="relative flex items-center flex-grow basis-0">
+      <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
           <Logomark className="h-9 w-9 lg:hidden" />
-          <Logo className="hidden w-auto h-10 fill-blue-80 dark:fill-black-10 lg:block" />
+          <Logo className="hidden h-10 w-auto fill-blue-80 dark:fill-black-10 lg:block" />
         </Link>
       </div>
-      <div className="mr-6 -my-5 sm:mr-8 md:mr-0">
+      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
         <Search />
       </div>
-      <div className="relative flex justify-end gap-6 basis-0 sm:gap-8 md:flex-grow">
+      <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
         <Link href="https://github.com" className="group" aria-label="GitHub">
-          <GitHubIcon className="w-6 h-6 fill-slate-400 group-hover:fill-black-50 dark:group-hover:fill-slate-300" />
+          <GitHubIcon className="fill-slate-400 dark:group-hover:fill-slate-300 h-6 w-6 group-hover:fill-black-50" />
         </Link>
       </div>
     </header>
@@ -161,7 +155,13 @@ function useTableOfContents(tableOfContents) {
   return currentSection
 }
 
-export function Layout({ children, title, tableOfContents }) {
+export function Layout({
+  children,
+  title,
+  tableOfContents,
+  links,
+  description,
+}) {
   let router = useRouter()
   let isHomePage = router.pathname === '/'
   let allLinks = navigation.flatMap((section) => section.links)
@@ -185,33 +185,33 @@ export function Layout({ children, title, tableOfContents }) {
 
   return (
     <>
-      <Header navigation={navigation} />
+      <Header navigation={links.links} />
 
       {isHomePage && <Hero />}
 
-      <div className="relative flex justify-center mx-auto max-w-8xl sm:px-2 lg:px-8 xl:px-12">
+      <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-black-10 dark:hidden" />
-          <div className="absolute bottom-0 right-0 hidden w-px h-12 top-16 bg-gradient-to-t from-black-70 dark:block" />
-          <div className="absolute bottom-0 right-0 hidden w-px top-28 bg-black-70 dark:block" />
+          <div className="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-black-70 dark:block" />
+          <div className="absolute bottom-0 right-0 top-28 hidden w-px bg-black-70 dark:block" />
           <div className="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-16 pl-0.5">
             <Navigation
-              navigation={navigation}
+              navigation={links.links}
               className="w-64 pr-8 xl:w-72 xl:pr-16"
             />
           </div>
         </div>
-        <div className="flex-auto max-w-2xl min-w-0 px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
           <article>
             {(title || section) && (
-              <header className="space-y-1 mb-9">
+              <header className="mb-9 space-y-1">
                 {section && (
-                  <p className="font-mono text-xs font-semibold tracking-widest uppercase text-green-60 dark:text-green-40">
+                  <p className="font-mono text-xs font-semibold uppercase tracking-widest text-green-60 dark:text-green-40">
                     {section.title}
                   </p>
                 )}
                 {title && (
-                  <h1 className="text-4xl tracking-tight font-display text-blue-80 dark:text-black-00">
+                  <h1 className="font-display text-4xl tracking-tight text-blue-80 dark:text-black-00">
                     {title}
                   </h1>
                 )}
@@ -219,16 +219,16 @@ export function Layout({ children, title, tableOfContents }) {
             )}
             <Prose>{children}</Prose>
           </article>
-          <dl className="flex pt-6 mt-12 border-t border-black-20 dark:border-black-70">
+          <dl className="mt-12 flex border-t border-black-20 pt-6 dark:border-black-70">
             {previousPage && (
               <div>
-                <dt className="text-sm font-medium font-display text-blue-80 dark:text-black-00">
+                <dt className="font-display text-sm font-medium text-blue-80 dark:text-black-00">
                   Previous
                 </dt>
                 <dd className="mt-1">
                   <Link
                     href={previousPage.href}
-                    className="text-base font-semibold text-black-50 hover:text-slate-600 dark:text-black-30 dark:hover:text-black-30"
+                    className="hover:text-slate-600 text-base font-semibold text-black-50 dark:text-black-30 dark:hover:text-black-30"
                   >
                     <span aria-hidden="true">&larr;</span> {previousPage.title}
                   </Link>
@@ -237,13 +237,13 @@ export function Layout({ children, title, tableOfContents }) {
             )}
             {nextPage && (
               <div className="ml-auto text-right">
-                <dt className="text-sm font-medium font-display text-blue-80 dark:text-black-00">
+                <dt className="font-display text-sm font-medium text-blue-80 dark:text-black-00">
                   Next
                 </dt>
                 <dd className="mt-1">
                   <Link
                     href={nextPage.href}
-                    className="text-base font-semibold text-black-50 hover:text-slate-600 dark:text-black-30 dark:hover:text-black-30"
+                    className="hover:text-slate-600 text-base font-semibold text-black-50 dark:text-black-30 dark:hover:text-black-30"
                   >
                     {nextPage.title} <span aria-hidden="true">&rarr;</span>
                   </Link>
@@ -258,7 +258,7 @@ export function Layout({ children, title, tableOfContents }) {
               <>
                 <h2
                   id="on-this-page-title"
-                  className="text-sm font-medium font-display text-blue-80 dark:text-black-00"
+                  className="font-display text-sm font-medium text-blue-80 dark:text-black-00"
                 >
                   On this page
                 </h2>
@@ -280,7 +280,7 @@ export function Layout({ children, title, tableOfContents }) {
                       {section.children.length > 0 && (
                         <ol
                           role="list"
-                          className="pl-5 mt-2 space-y-3 text-black-50 dark:text-black-30"
+                          className="mt-2 space-y-3 pl-5 text-black-50 dark:text-black-30"
                         >
                           {section.children.map((subSection) => (
                             <li key={subSection.id}>

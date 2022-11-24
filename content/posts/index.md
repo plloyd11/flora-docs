@@ -1,26 +1,47 @@
 ---
-title: Getting started
-pageTitle: MongoDB Flora
-description: The MongoDB Flora documentation site
+title: Getting started!
+description: >-
+  Cache every single thing your app could ever do ahead of time, so your code
+  never even has to run at all.
 ---
 
-Welcome to the Flora documentation site! It's a work in progress, so please bear with us. If you'd like to contribute, shoot us a message on slack in the #ask-flora channel.  {% .lead %}
+Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free.
 
-{% quick-links %}
-
-{% quick-link title="Foundations" icon="theming" href="/" description="Fundamental design guidance for creating quality admin experiences" /%}
-
-{% quick-link title="Components" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
-
-{% quick-link title="Tokens" icon="plugins" href="/" description="Coded names that represent design decisions for color, spacing, typography, and more" /%}
-
-{% quick-link title="Icons" icon="lightbulb" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
-
-{% /quick-links %}
+<QuickLinks
+  quickLinks={[
+    {
+      title: "Installation",
+      icon: "installation",
+      href: "/",
+      description:
+        "Step-by-step guides to setting up your system and installing the library."
+    },
+    {
+      title: "Architecture Guide",
+      icon: "presets",
+      href: "/",
+      description: "Learn how the internals work and contribute."
+    },
+    {
+      title: "Plugins",
+      icon: "plugins",
+      href: "/",
+      description:
+        "Extend the library with third-party plugins or write your own."
+    },
+    {
+      title: "API reference",
+      icon: "theming",
+      href: "/",
+      description:
+        "Learn to easily customize and modify your app's visual design to fit your brand."
+    }
+  ]}
+/>
 
 Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
 
----
+***
 
 ## Quick start
 
@@ -36,9 +57,9 @@ npm install @tailwindlabs/cache-advance
 
 Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
 
-{% callout type="warning" title="Oh no! Something bad happened!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
-{% /callout %}
+<Callout type="warning" title="Oh no! Something bad happened!">
+  This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
+</Callout>
 
 ### Configuring the library
 
@@ -57,11 +78,11 @@ export default {
 
 Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
 
-{% callout title="You should know!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
-{% /callout %}
+<Callout title="You should know!">
+  This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
+</Callout>
 
----
+***
 
 ## Basic usage
 
@@ -91,7 +112,7 @@ Harum perferendis aut qui quibusdam tempore laboriosam voluptatum qui sed. Amet 
 
 Ut quo libero aperiam mollitia est repudiandae quaerat corrupti explicabo. Voluptas accusantium sed et doloribus voluptatem fugiat a mollitia. Numquam est magnam dolorem asperiores fugiat. Soluta et fuga amet alias temporibus quasi velit. Laudantium voluptatum perspiciatis doloribus quasi facere. Eveniet deleniti veniam et quia veritatis minus veniam perspiciatis.
 
----
+***
 
 ## Getting help
 

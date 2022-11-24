@@ -1,5 +1,5 @@
 ---
-title: Accessibility
+title: Predictive data generation
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
