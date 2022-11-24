@@ -5,7 +5,7 @@ description: >-
   never even has to run at all.
 ---
 
-Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free.
+Welcome to the Flora documentation site! It's a work in progress, so please bear with us. If you'd like to contribute, shoot us a message on slack in the #ask-flora channel.
 
 <QuickLinks
   quickLinks={[
