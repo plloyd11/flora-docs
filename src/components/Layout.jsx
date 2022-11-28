@@ -11,54 +11,6 @@ import { Prose } from '../components/Prose'
 import { Search } from '../components/Search'
 import { ThemeSelector } from '../components/ThemeSelector'
 
-const navigation = [
-  {
-    title: 'Introduction',
-    links: [{ title: 'Getting started', href: '/' }],
-  },
-  {
-    title: 'Foundations',
-    links: [
-      { title: 'Colors', href: '/docs/foundations/colors' },
-      { title: 'Typography', href: '/docs/foundations/typography' },
-      { title: 'Grids', href: '/docs/foundations/grids' },
-      { title: 'Shadows', href: '/docs/foundations/shadows' },
-      { title: 'Border Radius', href: '/docs/foundations/border-radius' },
-      { title: 'Spacing', href: '/docs/foundations/spacing' },
-      { title: 'Accessibility', href: '/docs/foundations/accessibility' },
-    ],
-  },
-  {
-    title: 'Components',
-    links: [
-      { title: 'Button', href: '/docs/components/button' },
-      { title: 'Button Icon', href: '/docs/components/button-icon' },
-    ],
-  },
-  {
-    title: 'Patterns',
-    links: [
-      { title: 'Forms', href: '/docs/patterns/forms' },
-      { title: 'Tables', href: '/docs/patterns/tables' },
-    ],
-  },
-  {
-    title: 'Icons',
-    links: [{ title: 'System Icons', href: '/docs/icons/system-icons' }],
-  },
-  {
-    title: 'Tokens',
-    links: [
-      { title: 'Overview', href: '/docs/tokens/overview' },
-      { title: 'Token List', href: '/docs/tokens/token-list' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [{ title: 'How to contribute', href: '/docs/how-to-contribute' }],
-  },
-]
-
 function GitHubIcon(props) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
@@ -164,14 +116,16 @@ export function Layout({
 }) {
   let router = useRouter()
   let isHomePage = router.pathname === '/'
-  let allLinks = navigation.flatMap((section) => section.links)
-  let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
+  let allLinks = links.links.flatMap((section) => section.links)
+  let linkIndex = allLinks.findIndex((link) => link.href === router.asPath)
   let previousPage = allLinks[linkIndex - 1]
   let nextPage = allLinks[linkIndex + 1]
-  let section = navigation.find((section) =>
-    section.links.find((link) => link.href === router.pathname)
+  let section = links.links.find((section) =>
+    section.links.find((link) => link.href === router.asPath)
   )
   let currentSection = useTableOfContents(tableOfContents)
+
+  console.log(tableOfContents)
 
   function isActive(section) {
     if (section.id === currentSection) {

@@ -58,7 +58,7 @@ export function SearchModal(props) {
       afterLeave={() => setRawQuery('')}
       appear
     >
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+      <Dialog as="div" className="relative z-[100]" onClose={setOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -81,7 +81,7 @@ export function SearchModal(props) {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="divide-gray-100 ring-black mx-auto max-w-xl transform divide-y overflow-hidden rounded-xl bg-black-50 shadow-2xl ring-1 ring-opacity-5 transition-all">
+            <Dialog.Panel className="divide-gray-100 ring-black mx-auto max-w-xl transform divide-y overflow-hidden rounded-xl bg-black-20 shadow-2xl ring-1 ring-opacity-5 transition-all">
               <Combobox onChange={(item) => (window.location = item.url)}>
                 <div className="relative">
                   <MagnifyingGlassIcon
@@ -89,7 +89,7 @@ export function SearchModal(props) {
                     aria-hidden="true"
                   />
                   <Combobox.Input
-                    className="text-gray-800 placeholder-gray-400 h-12 w-full border-0 bg-transparent pl-11 pr-4 focus:ring-0 sm:text-sm"
+                    className="text-gray-800 placeholder-gray-400 h-12 w-full border-0 bg-transparent pr-4 pl-11 focus:ring-0 sm:text-sm"
                     placeholder="Search..."
                     onChange={(event) => setRawQuery(event.target.value)}
                   />
@@ -98,7 +98,7 @@ export function SearchModal(props) {
                 {filteredDocuments.length > 0 && (
                   <Combobox.Options
                     static
-                    className="max-h-80 scroll-py-10 scroll-py-10 scroll-pb-2 scroll-pb-2 space-y-4 overflow-y-auto p-4 pb-2"
+                    className="max-h-80 scroll-py-10 scroll-pb-2 space-y-4 overflow-y-auto p-4 pb-2"
                   >
                     {filteredDocuments.length > 0 && (
                       <li>
@@ -113,7 +113,7 @@ export function SearchModal(props) {
                               className={({ active }) =>
                                 classNames(
                                   'flex cursor-default select-none items-center px-4 py-2',
-                                  active && 'bg-indigo-600 text-white'
+                                  active && 'bg-pink-60 text-white'
                                 )
                               }
                             >
@@ -140,7 +140,7 @@ export function SearchModal(props) {
                 )}
 
                 {rawQuery === '?' && (
-                  <div className="py-14 px-6 text-center text-sm sm:px-14">
+                  <div className="px-6 py-14 text-center text-sm sm:px-14">
                     <LifebuoyIcon
                       className="text-gray-400 mx-auto h-6 w-6"
                       aria-hidden="true"
@@ -158,7 +158,7 @@ export function SearchModal(props) {
                 )}
 
                 {rawQuery !== '?' && filteredDocuments.length === 0 && (
-                  <div className="py-14 px-6 text-center text-sm sm:px-14">
+                  <div className="px-6 py-14 text-center text-sm sm:px-14">
                     <ExclamationTriangleIcon
                       className="text-gray-400 mx-auto h-6 w-6"
                       aria-hidden="true"

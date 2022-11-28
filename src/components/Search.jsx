@@ -50,12 +50,12 @@ export function Search() {
         className="group flex h-6 w-6 items-center justify-center sm:justify-start md:h-auto md:w-80 md:flex-none md:rounded-lg md:py-2.5 md:pl-4 md:pr-3.5 md:text-sm md:ring-1 md:ring-black-20 md:hover:ring-black-30 dark:md:bg-black-80/75 dark:md:ring-inset dark:md:ring-black-00/5 dark:md:hover:bg-black-70/40 dark:md:hover:ring-black-50 lg:w-96"
         onClick={onOpen}
       >
-        <SearchIcon className="h-5 w-5 flex-none fill-black-60 group-hover:fill-black-50 dark:fill-black-30 md:group-hover:fill-black-20" />
+        <SearchIcon className="flex-none w-5 h-5 fill-black-60 group-hover:fill-black-50 dark:fill-black-30 md:group-hover:fill-black-20" />
         <span className="sr-only md:not-sr-only md:ml-2 md:text-black-50 md:dark:text-black-40">
           Search docs
         </span>
         {modifierKey && (
-          <kbd className="ml-auto hidden font-medium text-black-40 dark:text-black-50 md:block">
+          <kbd className="hidden ml-auto font-medium text-black-40 dark:text-black-50 md:block">
             <kbd className="font-sans">{modifierKey}</kbd>
             <kbd className="font-sans">K</kbd>
           </kbd>

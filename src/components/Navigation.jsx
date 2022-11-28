@@ -10,7 +10,7 @@ export function Navigation({ navigation, className }) {
       <ul role="list" className="space-y-9">
         {navigation.map((section) => (
           <li key={section.title}>
-            <h2 className="text-lg font-medium font-display text-blue-80 dark:text-black-00">
+            <h2 className="font-display text-lg font-medium text-blue-80 dark:text-black-00">
               {section.title}
             </h2>
             <ul

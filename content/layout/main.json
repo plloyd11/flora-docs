@@ -6,85 +6,83 @@
         {
           "title": "Getting started",
           "href": "/"
-        },
-        {
-          "title": "Installation",
-          "href": "/docs/installation"
         }
       ]
     },
     {
-      "title": "Core concepts",
+      "title": "Foundations",
       "links": [
         {
-          "title": "Understanding caching",
-          "href": "/docs/understanding-caching"
+          "title": "Colors",
+          "href": "/docs/colors"
         },
         {
-          "title": "Predicting user behavior",
-          "href": "/docs/predicting-user-behavior"
+          "title": "Typography",
+          "href": "/docs/typography"
         },
         {
-          "title": "Basics of time-travel",
-          "href": "/docs/basics-of-time-travel"
+          "title": "Grids",
+          "href": "/docs/grids"
         },
         {
-          "title": "Introduction to string theory",
-          "href": "/docs/introduction-to-string-theory"
+          "title": "Shadows",
+          "href": "/docs/shadows"
         },
         {
-          "title": "The butterfly effect",
-          "href": "/docs/the-butterfly-effect"
+          "title": "Border Radius",
+          "href": "/docs/border-radius"
+        },
+        {
+          "title": "Spacing",
+          "href": "/docs/spacing"
+        },
+        {
+          "title": "Accessibility",
+          "href": "/docs/accessibility"
         }
       ]
     },
     {
-      "title": "Advanced guides",
+      "title": "Components",
       "links": [
         {
-          "title": "Writing plugins",
-          "href": "/docs/writing-plugins"
-        },
-        {
-          "title": "Neuralink integration",
-          "href": "/docs/neuralink-integration"
-        },
-        {
-          "title": "Temporal paradoxes",
-          "href": "/docs/temporal-paradoxes"
-        },
-        {
-          "title": "Testing",
-          "href": "/docs/testing"
-        },
-        {
-          "title": "Compile-time caching",
-          "href": "/docs/compile-time-caching"
-        },
-        {
-          "title": "Predictive data generation",
-          "href": "/docs/predictive-data-generation"
+          "title": "Button",
+          "href": "/docs/button"
         }
       ]
     },
     {
-      "title": "API reference",
+      "title": "Patterns",
       "links": [
         {
-          "title": "CacheAdvance.predict()",
-          "href": "/docs/cacheadvance-predict"
+          "title": "Forms",
+          "href": "/docs/forms"
         },
         {
-          "title": "CacheAdvance.flush()",
-          "href": "/docs/cacheadvance-flush"
+          "title": "Tables",
+          "href": "/docs/tables"
+        }
+      ]
+    },
+    {
+      "title": "Icons",
+      "links": [
+        {
+          "title": "System Icons",
+          "href": "/docs/system-icons"
+        }
+      ]
+    },
+    {
+      "title": "Tokens",
+      "links": [
+        {
+          "title": "Overview",
+          "href": "/docs/tokens-overview"
         },
         {
-          "title": "CacheAdvance.revert()",
-          "href": "/docs/cacheadvance-revert"
-        },
-        {
-          "title": "CacheAdvance.regret()",
-          "href": "/docs/cacheadvance-regret"
+          "title": "Token List",
+          "href": "/docs/token-list"
         }
       ]
     },
@@ -94,14 +92,6 @@
         {
           "title": "How to contribute",
           "href": "/docs/how-to-contribute"
-        },
-        {
-          "title": "Architecture guide",
-          "href": "/docs/architecture-guide"
-        },
-        {
-          "title": "Design principles",
-          "href": "/docs/design-principles"
         }
       ]
     }
