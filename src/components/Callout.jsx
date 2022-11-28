@@ -6,8 +6,8 @@ const styles = {
   note: {
     container:
       'bg-blue-5 dark:bg-black-70/10 dark:ring-1 dark:ring-black-30/10',
-    title: 'text-sky-80 dark:text-black-10',
-    body: 'text-sky-800 [--tw-prose-background:theme(colors.sky.50)] prose-a:text-sky-80 prose-code:text-sky-80 dark:text-black-30 dark:prose-code:text-slate-300',
+    title: 'text-blue-80 dark:text-black-10',
+    body: 'text-blue-80 [--tw-prose-background:theme(colors.blue.50)] prose-a:text-blue-80 prose-code:text-blue-80 dark:text-black-30 dark:prose-code:text-slate-300',
   },
   warning: {
     container:
@@ -27,8 +27,8 @@ export function Callout({ type = 'note', title, children }) {
 
   return (
     <div className={clsx('my-8 flex rounded-3xl p-6', styles[type].container)}>
-      <IconComponent className="flex-none w-8 h-8" />
-      <div className="flex-auto ml-4">
+      <IconComponent className="h-8 w-8 flex-none" />
+      <div className="ml-4 flex-auto">
         <p className={clsx('m-0 font-display text-xl', styles[type].title)}>
           {title}
         </p>
