@@ -5,6 +5,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-iframe {
-  height: 364px;
+/* Global styles */
+
+ul {
+  list-style-type: disc;
 }

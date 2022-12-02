@@ -23,7 +23,7 @@ export function Navigation({ navigation, className }) {
                     href={link.href}
                     className={clsx(
                       'block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full',
-                      link.href === router.pathname
+                      link.href === router.asPath
                         ? 'font-semibold text-blue-60 before:bg-blue-60 dark:text-green-40 dark:before:bg-green-40'
                         : 'text-black-50 before:hidden before:bg-black-30 hover:text-black-60 hover:before:block dark:text-black-30 dark:before:bg-black-50 dark:hover:text-black-20'
                     )}
