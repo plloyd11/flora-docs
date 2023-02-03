@@ -13,6 +13,10 @@
       "title": "Foundations",
       "links": [
         {
+          "title": "Tokens",
+          "href": "/docs/tokens"
+        },
+        {
           "title": "Colors",
           "href": "/docs/colors"
         },
@@ -37,17 +41,42 @@
           "href": "/docs/spacing"
         },
         {
+          "title": "Motion",
+          "href": "/docs/motion"
+        },
+        {
           "title": "Accessibility",
           "href": "/docs/accessibility"
         }
       ]
     },
     {
-      "title": "Components",
+      "title": "Atoms",
       "links": [
         {
           "title": "Button",
           "href": "/docs/button"
+        },
+        {
+          "title": "Button Icon",
+          "href": "/docs/button-icon"
+        },
+        {
+          "title": "Link",
+          "href": "/docs/link"
+        },
+        {
+          "title": "Pagination",
+          "href": "/docs/pagination"
+        }
+      ]
+    },
+    {
+      "title": "Utility Components",
+      "links": [
+        {
+          "title": "2 CTA Lockup",
+          "href": "/docs/2-cta-lockup"
         }
       ]
     },
@@ -70,19 +99,10 @@
         {
           "title": "System Icons",
           "href": "/docs/system-icons"
-        }
-      ]
-    },
-    {
-      "title": "Tokens",
-      "links": [
-        {
-          "title": "Overview",
-          "href": "/docs/tokens-overview"
         },
         {
-          "title": "Token List",
-          "href": "/docs/token-list"
+          "title": "Branded Icons",
+          "href": "/docs/branded-icons"
         }
       ]
     },

@@ -1,6 +1,3 @@
-// THIS FILE HAS BEEN GENERATED WITH THE TINA CLI.
-// This is a demo file once you have tina setup feel free to delete this file
-
 import { Page } from '@/components/Page'
 import client from '../../../.tina/__generated__/client'
 

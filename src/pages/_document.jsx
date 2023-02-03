@@ -44,8 +44,15 @@ export default function Document() {
       <Head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body className="bg-black-00 dark:bg-black-80">
         <Main />

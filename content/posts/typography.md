@@ -18,4 +18,3 @@ Euclid is a modern Sans Serif that pairs effortlessly with MongoDB Value Serif. 
 Source Code Pro should be used for specific pieces of information like eyebrows, code and small UI elements. It should never be used as a headline, or for anything larger than 16px.
 
 ![Example hierarchy](/uploads/font-usage.png "Example hierarchy")
-

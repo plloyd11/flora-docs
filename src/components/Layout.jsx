@@ -84,11 +84,10 @@ function useTableOfContents(tableOfContents) {
 
   useEffect(() => {
     if (tableOfContents.length === 0) return
-    let headings = getHeadings(tableOfContents)
     function onScroll() {
       let top = window.scrollY
-      let current = headings[0].id
-      for (let heading of headings) {
+      let current = tableOfContents[0].id
+      for (let heading of tableOfContents) {
         if (top >= heading.top) {
           current = heading.id
         } else {
@@ -125,8 +124,6 @@ export function Layout({
   )
   let currentSection = useTableOfContents(tableOfContents)
 
-  console.log(tableOfContents)
-
   function isActive(section) {
     if (section.id === currentSection) {
       return true
@@ -158,7 +155,7 @@ export function Layout({
         <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
           <article>
             {(title || section) && (
-              <header className="mb-9 space-y-1">
+              <header className="mb-8">
                 {section && (
                   <p className="font-mono text-xs font-semibold uppercase tracking-widest text-green-60 dark:text-green-40">
                     {section.title}
@@ -168,6 +165,11 @@ export function Layout({
                   <h1 className="font-display text-4xl tracking-tight text-blue-80 dark:text-black-00">
                     {title}
                   </h1>
+                )}
+                {description && (
+                  <p className="mt-4 text-lg text-black-70 dark:text-black-20">
+                    {description}
+                  </p>
                 )}
               </header>
             )}
