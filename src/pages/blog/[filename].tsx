@@ -1,6 +1,3 @@
-// THIS FILE HAS BEEN GENERATED WITH THE TINA CLI.
-  // This is a demo file once you have tina setup feel free to delete this file
-
   import Head from 'next/head'
   import { useTina } from 'tinacms/dist/react'
   import { TinaMarkdown } from 'tinacms/dist/rich-text'
@@ -16,7 +13,6 @@
     return (
       <>
         <Head>
-          {/* Tailwind CDN */}
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
