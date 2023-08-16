@@ -12,9 +12,15 @@ description: >-
 
 The button is comprised of a required label, with optional icons on either the left, right or both sides.
 
-## Options / Variants / Props?
+![Anatomy of a button](/uploads/button-anatomy.png "Anatomy of a button")
+
+## Properties
 
 We can list out all of the different iterations of a button (with / without icons) primary / secondary, tertiary, different states (hover, active, focus, disabled)
+
+### Style
+
+![](/uploads/button-style.png)
 
 ## Behaviors
 
@@ -39,4 +45,3 @@ Instructions (if any) for keyboard interactions
 ## Changelog
 
 Do we include a list of updates to the figma/production version or is that unnecessary for users
-

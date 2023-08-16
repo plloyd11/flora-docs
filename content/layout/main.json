@@ -54,20 +54,48 @@
       "title": "Atoms",
       "links": [
         {
-          "title": "Button",
+          "title": "Navigation - Button",
           "href": "/docs/button"
         },
         {
-          "title": "Button Icon",
+          "title": "Navigation - Button Icon",
           "href": "/docs/button-icon"
         },
         {
-          "title": "Link",
+          "title": "Navigation - Link",
           "href": "/docs/link"
         },
         {
-          "title": "Pagination",
+          "title": "Navigation - Pagination",
           "href": "/docs/pagination"
+        },
+        {
+          "title": "Forms - Text Input",
+          "href": "/docs/forms-text-input"
+        },
+        {
+          "title": "Forms - Text Area",
+          "href": "/docs/forms-text-area"
+        },
+        {
+          "title": "Forms - Select",
+          "href": "/docs/forms-select"
+        },
+        {
+          "title": "Forms - Select Panel",
+          "href": "/docs/forms-select-panel"
+        },
+        {
+          "title": "Forms - ComboBox",
+          "href": "/docs/forms-combobox"
+        },
+        {
+          "title": "Forms - Checkbox",
+          "href": "/docs/forms-checkbox"
+        },
+        {
+          "title": "Forms - Radio Button",
+          "href": "/docs/forms-radio-button"
         }
       ]
     },
